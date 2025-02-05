@@ -1,0 +1,19 @@
+.block1 {
+background-color: rgb(109, 108, 108);
+height: 100px;
+}
+
+.block1 span {
+    color: rgb(138, 98, 176);
+}
+
+.block2 {
+    background-color: rgb(182, 91, 187);
+    height: 300px;
+    }
+
+.block2 span {
+    color: white;
+    background-color: rgb(46, 4, 85);
+    border: solid rgb(0, 0, 0);
+}
