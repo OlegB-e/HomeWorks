@@ -1,6 +1,7 @@
 .block1 {
 background-color: rgb(109, 108, 108);
 height: 100px;
+width: 100px;
 }
 
 .block1 span {
