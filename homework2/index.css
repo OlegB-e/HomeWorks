@@ -1,1 +1,24 @@
+.block-1 {
+    background-color: rgb(71, 68, 68);
+    color: #fff;
+}
 
+.accent-text {
+    color: #de6bd4;
+}
+
+.quad {
+    background: #ce2020;
+    width: 100px;
+    height: 100px;
+}
+
+.elements {
+    background: #cc7ad5;
+    width: 300px;
+
+    .element {
+        background: #66346c;
+        color: #fff;
+    }
+}
