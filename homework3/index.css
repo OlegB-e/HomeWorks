@@ -1,0 +1,19 @@
+.header-1 {
+    background: orange;
+    height: 60px;    
+}
+
+.text-3 {
+    background-color: rgb(214, 188, 142);
+}
+
+.list-1 {
+    background: blueviolet;
+    color: #fff;
+    height: 300px;
+}
+
+.list-1 a {
+    color: #fff;
+}
+
