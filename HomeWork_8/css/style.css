@@ -1,0 +1,25 @@
+.hero_text {
+    font-size: 100px;
+}
+
+.panel {
+    background-color: #6f6c6c;
+    color: #000;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Модификатор: фиксирован в правом нижнем углу */
+.panel--fixed-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50vw;
+    padding: 15px;
+}
+
+.panel__content {
+    font-size: 20px;
+    text-align: center;
+}
