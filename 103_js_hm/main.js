@@ -10,13 +10,13 @@ const myInfo = {
     }
 };
 
-console.log(myInfo.sayHello('Анна')); // Пример использования метода
+console.log(myInfo.sayHello('Олег')); // Пример использования метода
 
 // 3. Массив объектов с описанием пользователей
 const users = [
     { name: 'Иван', age: 30, isAdmin: false },
-    { name: 'Мария', age: 25, isAdmin: true },
-    { name: 'Олег', age: 22, isAdmin: false },
+    { name: 'Мария', age: 25, isAdmin: false },
+    { name: 'Олег', age: 22, isAdmin: true },
     { name: 'Светлана', age: 27, isAdmin: false },
     { name: 'Админ', age: 40, isAdmin: true }
 ];
