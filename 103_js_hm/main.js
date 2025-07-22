@@ -10,7 +10,7 @@ const myInfo = {
     }
 };
 
-console.log(myInfo.sayHello('Олег')); // Пример использования метода
+console.log(myInfo.sayHello(myInfo.name));// Пример использования метода
 
 // 3. Массив объектов с описанием пользователей
 const users = [
