@@ -20,3 +20,11 @@ modal.addEventListener('click', (e) => {
         modal.classList.remove('modal--active');
     }
 });
+
+// Закрытие по клавише Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('modal--active')) {
+        modal.classList.remove('modal--active');
+    }
+});
+
