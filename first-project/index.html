@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit.Studio — Открытие нового филиала</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Fit.Studio</h1>
+                    <p>Первое посещение бесплатно</p>
+                </div>
+                <div class="phone">+7 (928) 282-28-82</div>
+            </div>
+            <nav>
+                <a href="#">Клубы</a>
+                <a href="#">Тренировки</a>
+                <a href="#">Абонементы</a>
+                <a href="#">Программа лояльности</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Открытие нового филиала в центре города!</h1>
+            <p>
+                Фитнес клуб «Fit.Studio» рад сообщить об открытии нового филиала в центре города.
+                Новый клуб расположен в удобном месте, рядом с остановками общественного транспорта,
+                что делает его доступным для всех жителей города. Новое просторное помещение оборудовано
+                современными тренажёрами, зонами для групповых занятий и отдыха, а также сауной и бассейном.
+            </p>
+            <p>
+                Кроме того, в «Fit.Studio» работают опытные тренеры, которые помогут составить
+                индивидуальную программу тренировок и диеты для достижения желаемых результатов.
+                Клиенты могут также воспользоваться услугами персональных тренировок и консультаций
+                по здоровому образу жизни.
+            </p>
+
+            <img class="feature-img" src="img/gym-image.jpg" alt="Новый тренажёрный зал Fit.Studio"
+                onerror="this.onerror=null; this.src='https://placehold.co/960x400/f0f0f0/333?text=Fit.Studio+новый+зал'">
+            <div class="img-caption">Современное пространство нового филиала</div>
+
+            <h2>Групповые занятия</h2>
+            <p>
+                В новом филиале «Fit.Studio» будут проводиться различные групповые занятия.
+                Каждый клиент сможет подобрать подходящий ему вид занятий и найти комфортную среду для тренировок.
+            </p>
+            <ul class="classes-list">
+                <li>Йога</li>
+                <li>Пилатес</li>
+                <li>Аэробика</li>
+                <li>Танцы</li>
+                <li>Силовые тренировки</li>
+            </ul>
+
+            <h2>Обзор нового филиала</h2>
+            <video src="img/gym-video.mp4" controls
+                poster="https://placehold.co/960x540/222/fff?text=Видеообзор+Fit.Studio">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <div class="invitation">
+                🏋️ Приглашаем всех желающих посетить новый филиал фитнес клуба «Fit.Studio»
+                и начать заботиться о своем здоровье и фитнесе прямо сейчас!
+            </div>
+            <div class="address">
+                📍 Адрес: ул. Центральная, 15 (вход со стороны бульвара). Ежедневно с 7:00 до 23:00.
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            © Copyright. Все права защищены
+        </div>
+    </footer>
+
+    <script>
+        // Простая подстановка заглушки для видео, если не загрузилось
+        (function () {
+            const img = document.querySelector('.feature-img');
+            if (img && img.complete && img.naturalWidth === 0) {
+                img.src = 'https://placehold.co/960x400/f0f0f0/333?text=Fit.Studio+новый+зал';
+            }
+            const video = document.querySelector('video');
+            if (video && video.readyState === 0) {
+                video.poster = 'https://placehold.co/960x540/222/fff?text=Видеообзор+Fit.Studio';
+            }
+        })();
+    </script>
+</body>
+
+</html>
