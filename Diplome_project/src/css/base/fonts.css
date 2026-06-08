@@ -1,0 +1,71 @@
+/* ===== ПОДКЛЮЧЕНИЕ ШРИФТОВ ===== */
+
+/* Integral CF - Regular */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../../assets/fonts/IntegralCF-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/IntegralCF-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Integral CF - Bold */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../../assets/fonts/IntegralCF-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/IntegralCF-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Integral CF - Heavy (самый жирный - используйте его для заголовка) */
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../../assets/fonts/IntegralCF-Heavy.woff2') format('woff2'),
+        url('../../assets/fonts/IntegralCF-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Satoshi - Regular */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../assets/fonts/Satoshi-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Satoshi - Medium */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../assets/fonts/Satoshi-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Satoshi-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Satoshi - Bold */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../assets/fonts/Satoshi-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Satoshi - Black */
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../../assets/fonts/Satoshi-Black.woff2') format('woff2'),
+        url('../../assets/fonts/Satoshi-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}

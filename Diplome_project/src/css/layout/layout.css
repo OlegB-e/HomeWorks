@@ -1,0 +1,439 @@
+/* ===== LAYOUT ===== */
+
+/* Header */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border);
+    animation: slideDown 0.6s ease;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__logo {
+    font-size: 32px;
+    font-weight: 900;
+    transition: transform 0.3s ease;
+}
+
+.header__logo:hover {
+    transform: scale(1.05);
+}
+
+.header__menu {
+    font-weight: 400;
+    display: flex;
+    gap: 24px;
+}
+
+.header__menu li {
+    transition: transform 0.3s ease;
+}
+
+.header__menu li:hover {
+    transform: translateX(3px);
+}
+
+.header__actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+/* ===== ВЫПАДАЮЩЕЕ МЕНЮ ===== */
+.header__menu-item--has-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header__arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Поворот стрелки при наведении/открытии */
+.header__menu-item--has-dropdown:hover .header__arrow {
+    transform: rotate(180deg);
+}
+
+/* Выпадающее меню (скрыто по умолчанию) */
+.header__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+/* Показываем меню при наведении */
+.header__menu-item--has-dropdown:hover .header__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Стили для пунктов выпадающего меню */
+.header__dropdown li {
+    margin: 0;
+}
+
+.header__dropdown a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #666;
+    transition: all 0.2s ease;
+}
+
+.header__dropdown a:hover {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* Поиск */
+.header__search {
+    padding: 10px 50px 10px 45px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background: var(--color-gray-light) url('../../assets/images/icons/find.svg') no-repeat;
+    background-size: 20px;
+    background-position: 15px center;
+    font-size: 14px;
+    width: 400px;
+    transition: all 0.3s ease;
+}
+
+.header__search::placeholder {
+    color: #999;
+}
+
+.header__search:focus {
+    border-color: var(--color-black);
+    background: var(--color-white);
+    transform: scale(1.02);
+    outline: none;
+}
+
+.header__cart,
+.header__user {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-radius: var(--radius-round);
+    transition: all 0.3s ease;
+}
+
+.header__cart:hover,
+.header__user:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+/* Hero */
+.hero__inner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    min-height: 500px;
+}
+
+.hero__content {
+    flex: 1;
+    animation: fadeInLeft 0.8s ease;
+}
+
+.hero__image {
+    flex: 1;
+    animation: fadeInRight 0.8s ease;
+}
+
+.hero__title {
+    font-family: "Integral CF", serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 112%;
+    margin-bottom: 20px;
+    animation: fadeInUp 0.6s ease 0.2s backwards;
+}
+
+.hero__text {
+    font-weight: 400;
+    color: var(--color-gray-dark);
+    margin-bottom: 30px;
+    animation: fadeInUp 0.6s ease 0.4s backwards;
+}
+
+.hero__stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    animation: fadeInUp 0.6s ease 0.6s backwards;
+}
+
+.hero__stat-number {
+    display: block;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.hero__stat-label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-gray-dark);
+}
+
+/* Бренды */
+.brands {
+    background: var(--color-black);
+    padding: 30px 0;
+}
+
+.brands__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.brands__item {
+    max-height: 30px;
+    filter: brightness(0) invert(1);
+    animation: fadeIn 0.5s ease backwards;
+    transition: all 0.3s ease;
+}
+
+.brands__item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.brands__item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.brands__item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.brands__item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.brands__item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.brands__item:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+/* Footer */
+.footer {
+    background-color: #f0f0f0;
+    padding: 140px 24px 82px 24px;
+    animation: fadeInScroll 0.8s ease 0.6s backwards;
+}
+
+.footer__container {
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Satoshi', Arial, sans-serif;
+}
+
+.footer__row-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 118px;
+    margin-bottom: 28px;
+    font-size: 16px;
+}
+
+.footer__col-left {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 248px;
+}
+
+.footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__title {
+    font-family: 'Integral CF', serif;
+    font-size: 33.45px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    color: #000;
+}
+
+.footer__description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.571;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+.footer__social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__social-link {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    color: #000;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.footer__social-link:hover {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.footer__social-link--dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.footer__social-link--dark:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.footer__column-title {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.125;
+    letter-spacing: 3px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer__column-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__column-list a {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 400;
+    line-height: 1.188;
+    letter-spacing: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__column-list a:hover {
+    color: #000;
+}
+
+.footer__divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 28px 0;
+}
+
+.footer__row-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer__copyright {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.footer__payments {
+    display: flex;
+    gap: 12px;
+}
+
+.footer__badge {
+    width: 47px;
+    height: 30px;
+    box-shadow: 0px 0.45px 4.48px rgba(183, 183, 183, 0.08), 0px 4.48px 8.96px rgba(183, 183, 183, 0.08);
+    border: 0.2px solid #e0e0e0;
+    border-radius: 5.38px;
+    background-color: #fff;
+    object-fit: contain;
+    padding: 5px;
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+    .footer {
+        padding: 60px 24px;
+    }
+    
+    .footer__row-top {
+        flex-direction: column;
+        gap: 23px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__row-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer__payments {
+        justify-content: center;
+    }
+}

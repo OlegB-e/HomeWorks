@@ -1,0 +1,39 @@
+/* ===== ПЕРЕМЕННЫЕ ===== */
+:root {
+    /* Цвета */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-dark: #666;
+    --color-gray-light: #f5f5f5;
+    --color-border: #eee;
+    --color-rating: #f5a623;
+    --color-success: #4caf50;
+    
+    /* Отступы */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+    
+    /* Шрифты */
+    --font-primary: 'Satoshi', Arial, sans-serif;
+    --font-secondary: 'Integral CF', serif;
+    
+    /* Радиусы */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-xl: 30px;
+    --radius-round: 50%;
+    
+    /* Тени */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 15px 35px rgba(0, 0, 0, 0.2);
+    
+    /* Контейнер */
+    --container-width: 1200px;
+}
