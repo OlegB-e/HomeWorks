@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <!-- ============================================ -->
+    <!-- 1. HEADER — ВЕРХНЯЯ ПРОМО-ПОЛОСА -->
+    <!-- ============================================ -->
+    <header class="header">
+        <input type="checkbox" id="header-toggle" class="header-toggle">
+
+        <div class="header-content">
+            <p class="header-text">
+                <span class="header-text-full">Зарегистрируйтесь и получите скидку 20% на первую покупку. </span>
+                <a class="header-link" href="#">Зарегистрироваться сейчас</a>
+            </p>
+
+            <label for="header-toggle" class="header-close-icon">
+                <object data="assets/header-group.svg" type="image/svg+xml"></object>
+            </label>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- 2. НАВИГАЦИЯ — ЛОГОТИП, МЕНЮ, ПОИСК, КОРЗИНА -->
+    <!-- ============================================ -->
+    <nav class="navbar">
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <input type="checkbox" id="search-toggle" class="search-toggle">
+
+        <label for="burger-toggle" class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <h2 class="logo">SHOP.CO</h2>
+
+        <div class="nav-menu">
+            <label for="burger-toggle" class="menu-close-icon">
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="nav-item dropdown">
+                <p class="nav-link">Магазин</p>
+                <object data="assets/group1.svg" class="dropdown-icon" type="image/svg+xml"></object>
+            </div>
+            <p class="nav-link">Скидки</p>
+            <p class="nav-link">Новые поступления</p>
+            <p class="nav-link">Бренды</p>
+        </div>
+
+        <!-- Десктопный поиск -->
+        <div class="search-bar">
+            <object data="assets/group2.svg" class="search-icon" type="image/svg+xml"></object>
+            <p class="search-placeholder">Искать товары...</p>
+        </div>
+
+        <!-- Иконка поиска для мобильных -->
+        <label for="search-toggle" class="search-icon-mobile" aria-label="Поиск">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7" />
+                <path d="M16.5 16.5L21 21" />
+            </svg>
+        </label>
+
+        <!-- Иконки (универсальные для всех устройств) -->
+        <div class="nav-icons">
+            <img src="assets/backet.svg" alt="Корзина" class="nav-icon nav-basket">
+            <img src="assets/prof.svg" alt="Профиль" class="nav-icon nav-prof">
+        </div>
+
+        <!-- Мобильное окно поиска -->
+        <div class="search-mobile">
+            <div class="search-mobile-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="M16.5 16.5L21 21" />
+                </svg>
+                <input type="text" class="search-mobile-input" placeholder="Искать товары..." autofocus>
+                <label for="search-toggle" class="search-mobile-close">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M18 6L6 18M6 6L18 18" />
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </nav>
+    <!-- ============================================ -->
+    <!-- 3. HERO — ГЛАВНЫЙ БЛОК С ЗАГОЛОВКОМ И СТАТИСТИКОЙ -->
+    <!-- ============================================ -->
+    <section class="hero">
+        <!-- Заголовок -->
+        <div class="hero-header">
+            <h1 class="hero-title">НАЙДИ ОДЕЖДУ КОТОРАЯ ВЫРАЗИТ ТВОЙ СТИЛЬ</h1>
+        </div>
+
+        <!-- Описание -->
+        <div class="hero-description">
+            <p class="hero-text">
+                Просмотрите наш набор тщательно сделанной одежды, созданный чтобы подчеркнуть ваш индивидуальный стиль.
+            </p>
+        </div>
+
+        <!-- Кнопка -->
+        <button class="btn-primary btn-cta">Купить сейчас</button>
+
+        <!-- Статистика -->
+        <div class="stats">
+            <div class="stat-item stat-item--last-1">
+                <h2 class="stat-number">200+</h2>
+                <p class="stat-label">Всемирных брендов</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item stat-item--last-2">
+                <h2 class="stat-number">2,000+</h2>
+                <p class="stat-label">Качественных товаров</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat-item stat-item--last-3">
+                <h2 class="stat-number">30,000+</h2>
+                <p class="stat-label">Счастливых клиентов</p>
+            </div>
+        </div>
+
+        <!-- Картинка только для мобильных -->
+        <img src="assets/mob-col.png" class="hero-image-mobile" alt="hero image" />
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 4. БРЕНДЫ — ЛОГОТИПЫ ПАРТНЁРОВ -->
+    <!-- ============================================ -->
+    <section class="brands">
+        <div class="brands__inner">
+            <object data="assets/group3.svg" class="brands__item" type="image/svg+xml"></object>
+            <object data="assets/zara-logo.svg" class="brands__item" type="image/svg+xml"></object>
+            <object data="assets/gucci-logo.svg" class="brands__item" type="image/svg+xml"></object>
+            <object data="assets/prada-logo.svg" class="brands__item" type="image/svg+xml"></object>
+            <object data="assets/group4.svg" class="brands__item" type="image/svg+xml"></object>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 5. НОВЫЕ ПОСТУПЛЕНИЯ — КАРТОЧКИ ТОВАРОВ -->
+    <!-- ============================================ -->
+    <section class="products-section">
+        <h2 class="section-title">НОВЫЕ ПОСТУПЛЕНИЯ</h2>
+
+        <div class="products-grid">
+            <!-- Карточка 1 -->
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <img src="assets/frame/frame-img1.png" class="product-image" alt="Футболка с лентой" />
+                </div>
+                <p class="product-name">Футболка с лентой</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">4.5/<span class="rating-max">5</span></p>
+                </div>
+                <p class="price">₽5000</p>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="product-card-wrapper">
+                <div class="product-card card-light">
+                    <img src="assets/img1.png" class="product-image" alt="Узкие джинсы" />
+                </div>
+                <p class="product-name">Узкие джинсы</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic2.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">3.5/<span class="rating-max">5</span></p>
+                </div>
+                <div class="price-group">
+                    <h2 class="price-current">₽5000</h2>
+                    <h2 class="price-old">₽6000</h2>
+                    <button class="badge-discount">-20%</button>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <img src="assets/frame/frame-img2.png" class="product-image" alt="Клетчатая рубашка" />
+                </div>
+                <p class="product-name">Клетчатая рубашка</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">4.5/<span class="rating-max">5</span></p>
+                </div>
+                <p class="price">₽7000</p>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <img src="assets/frame/frame-img3.png" class="product-image" alt="Футболка с полосами" />
+                </div>
+                <p class="product-name">Футболка с полосами</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">4.5/<span class="rating-max">5</span></p>
+                </div>
+                <div class="price-group">
+                    <h2 class="price-current">₽6000</h2>
+                    <h2 class="price-old">₽8000</h2>
+                    <button class="badge-discount">-30%</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-secondary">Посмотреть всё</button>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- ============================================ -->
+    <!-- 6. ЛИДЕРЫ ПРОДАЖ — КАРТОЧКИ ТОВАРОВ -->
+    <!-- ============================================ -->
+    <section class="products-section">
+        <h2 class="section-title">ЛИДЕРЫ ПРОДАЖ</h2>
+
+        <div class="products-grid">
+            <!-- Карточка 1 -->
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <img src="assets/frame/frame-img4.png" class="product-image" alt="Рубашка в полоску" />
+                </div>
+                <p class="product-name">Рубашка в полоску</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic5.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">5.0/<span class="rating-max">5</span></p>
+                </div>
+                <div class="price-group">
+                    <h2 class="price-current">₽5000</h2>
+                    <h2 class="price-old">₽6000</h2>
+                    <button class="badge-discount">-20%</button>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="product-card-wrapper">
+                <div class="product-card card-light">
+                    <img src="assets/img2.png" class="product-image" alt="Футболка Courage" />
+                </div>
+                <p class="product-name">Футболка «Courage»</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic6.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">4.0/<span class="rating-max">5</span></p>
+                </div>
+                <p class="price">₽5000</p>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="product-card-wrapper">
+                <div class="product-card">
+                    <img src="assets/frame/frame-img5.png" class="product-image" alt="Свободные бермуды" />
+                </div>
+                <p class="product-name">Свободные бермуды</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic7.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">3.0/<span class="rating-max">5</span></p>
+                </div>
+                <p class="price">₽4000</p>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="product-card-wrapper">
+                <div class="product-card card-light">
+                    <img src="assets/img3.png" class="product-image" alt="Потертые узкие джинсы" />
+                </div>
+                <p class="product-name">Потертые узкие джинсы</p>
+                <div class="rating">
+                    <object data="assets/row/row-graphic.svg" class="stars" type="image/svg+xml"></object>
+                    <p class="rating-value">4.5/<span class="rating-max">5</span></p>
+                </div>
+                <p class="price">₽7000</p>
+            </div>
+        </div>
+
+        <button class="btn-secondary">Посмотреть всё</button>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 7. ВЫБЕРИ СВОЙ СТИЛЬ -->
+    <!-- ============================================ -->
+    <section class="style-section">
+        <h2 class="style-title">ВЫБЕРИ СВОЙ СТИЛЬ</h2>
+
+        <div class="style-grid">
+            <!-- ===== ДЕСКТОПНЫЕ КАРТОЧКИ ===== -->
+
+            <div class="style-card style-card--casual">
+                <img src="assets/symbol1.png" alt="Свободный стиль" class="style-card__image" />
+                <span class="style-card__label">Свободный</span>
+            </div>
+
+            <div class="style-card style-card--formal">
+                <img src="assets/symbol2.png" alt="Формальный стиль" class="style-card__image" />
+                <span class="style-card__label">Формальный</span>
+            </div>
+
+            <div class="style-card style-card--evening">
+                <img src="assets/img4.png" alt="Вечерний стиль" class="style-card__image" />
+                <span class="style-card__label">Вечерний</span>
+            </div>
+
+            <div class="style-card style-card--sport">
+                <img src="assets/img5.png" alt="Спортивный стиль" class="style-card__image" />
+                <span class="style-card__label">Спорт</span>
+            </div>
+
+            <!-- ===== МОБИЛЬНЫЕ КАРТОЧКИ ===== -->
+
+            <div class="style-card-mobile style-card--casual">
+                <img src="assets/symbol1.png" alt="Свободный стиль" class="style-card__image" />
+                <span class="style-card__label">Свободный</span>
+            </div>
+
+            <div class="style-card-mobile style-card--formal">
+                <img src="assets/symbol2.png" alt="Формальный стиль" class="style-card__image" />
+                <span class="style-card__label">Формальный</span>
+            </div>
+
+            <div class="style-card-mobile style-card--evening">
+                <img src="assets/img4.png" alt="Вечерний стиль" class="style-card__image" />
+                <span class="style-card__label">Вечерний</span>
+            </div>
+
+            <div class="style-card-mobile style-card--sport">
+                <img src="assets/img5.png" alt="Спортивный стиль" class="style-card__image" />
+                <span class="style-card__label">Спорт</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 8. ОТЗЫВЫ — КАРТОЧКИ КЛИЕНТОВ -->
+    <!-- ============================================ -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <h2 class="section-title section-title--left">ЧТО О НАС ГОВОРЯТ</h2>
+            <div class="testimonials-nav">
+                <button class="arrow-btn arrow-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="arrow-btn arrow-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Карточка 1 — Максим А. -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-author">
+                        <p class="author-name">Максим А.</p>
+                        <span class="verified-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#01AB31" />
+                                <path d="M15 7L8.5 13.5L5 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">
+                        «Я впечатлён качеством и стилем одежды от Shop.co. От повседневных вещей до элегантных платьев —
+                        каждая покупка превзошла мои ожидания.»
+                    </p>
+                </div>
+            </div>
+
+            <!-- Карточка 2 — Даниил В. -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-author">
+                        <p class="author-name">Даниил В.</p>
+                        <span class="verified-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#01AB31" />
+                                <path d="M15 7L8.5 13.5L5 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">
+                        «Раньше было трудно найти одежду под мой стиль, пока я не открыл Shop.co. Их ассортимент
+                        впечатляет и подходит для разных вкусов и случаев.»
+                    </p>
+                </div>
+            </div>
+
+            <!-- Карточка 3 — Альберт Б. -->
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-author">
+                        <p class="author-name">Альберт Б.</p>
+                        <span class="verified-badge">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <circle cx="10" cy="10" r="10" fill="#01AB31" />
+                                <path d="M15 7L8.5 13.5L5 10" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="testimonial-text">
+                        «Я всегда ищу уникальные модные вещи и был рад открыть для себя Shop.co. Их выбор одежды очень
+                        разнообразен и полностью соответствует последним модным трендам.»
+                    </p>
+                </div>
+            </div>
+
+            <!-- Карточка 4 — Матвей К. (без бейджа) -->
+            <div class="testimonial-card testimonial-card--last">
+                <div class="testimonial-stars">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z"
+                            fill="#FFC633" />
+                    </svg>
+                </div>
+                <div class="testimonial-content">
+                    <div class="testimonial-author">
+                        <p class="author-name">Матвей К.</p>
+                    </div>
+                    <p class="testimonial-text">
+                        «Я всегда ищу уникальные модные вещи и рад, что открыл Shop.co. Их ассортимент одежды
+                        разнообразен и полностью соответствует последним модным тенденциям.»
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== РАССЫЛКА (CTA) ===== -->
+    <section class="newsletter">
+        <div class="newsletter__container">
+            <h2 class="newsletter__title">
+                БУДЬТЕ В КУРСЕ ВСЕХ<br>
+                ПОСЛЕДНИХ НОВОСТЕЙ
+            </h2>
+
+            <div class="newsletter__form-wrapper">
+                <div class="newsletter__input-group">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="newsletter__icon">
+                        <path
+                            d="M3 8l9 6 9-6M3 20h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <input type="email" class="newsletter__input" placeholder="Ваша почта" required>
+                </div>
+                <button type="submit" class="newsletter__btn">Подписаться на рассылку</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 9. FOOTER — ПОДВАЛ С ССЫЛКАМИ И ПЛАТЕЖАМИ -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row-top">
+                <!-- Левая колонка с брендом -->
+                <div class="footer__col-left">
+                    <div class="footer__brand">
+                        <h2 class="footer__title">SHOP.CO</h2>
+                        <p class="footer__description">
+                            У нас есть одежда, что подходит вашему стилю и которой можно гордиться. Для женщин и мужчин.
+                        </p>
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link" aria-label="Twitter">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Facebook">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Instagram">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="GitHub">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.123-.3-.535-1.52.117-3.16 0 0 1.008-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.64.24 2.86.118 3.16.768.84 1.233 1.91 1.233 3.22 0 4.61-2.804 5.62-5.476 5.92.43.37.824 1.102.824 2.22 0 1.602-.015 2.894-.015 3.287 0 .322.216.695.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Колонки ссылок -->
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Компания</h3>
+                    <ul class="footer__column-list">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Функции</a></li>
+                        <li><a href="#">Работа</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Помощь</h3>
+                    <ul class="footer__column-list">
+                        <li><a href="#">Поддержка</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Условия</a></li>
+                        <li><a href="#">Политика</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Вопросы</h3>
+                    <ul class="footer__column-list">
+                        <li><a href="#">Аккаунт</a></li>
+                        <li><a href="#">О доставке</a></li>
+                        <li><a href="#">Заказы</a></li>
+                        <li><a href="#">Платежи</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Ресурсы</h3>
+                    <ul class="footer__column-list">
+                        <li><a href="#">Бесплатные книги</a></li>
+                        <li><a href="#">Уроки</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Плейлист на YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer__divider" />
+
+            <div class="footer__row-bottom">
+                <p class="footer__copyright">Shop.co © 2000-2023, Все права защищены</p>
+                <div class="footer__payments">
+                    <img src="assets/badge/badge-visa.svg" alt="Visa" class="footer__badge" />
+                    <img src="assets/footer-mastercard.svg" alt="Mastercard" class="footer__badge" />
+                    <img src="assets/footer-paypal.svg" alt="PayPal" class="footer__badge" />
+                    <img src="assets/badge/badge-pay.svg" alt="Apple Pay" class="footer__badge" />
+                    <img src="assets/badge/badge-g-pay.svg" alt="Google Pay" class="footer__badge" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
